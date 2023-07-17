@@ -4,10 +4,12 @@ import ReactPlayer from 'react-player'
 function App() {
   const [loopCount, setLoopCount] = React.useState(0)
   const [duration, setDuration] = React.useState(0)
+  const [playerVideo, setPlayerVideo] = React.useState(true)
 
   function handlerOnProgress(state) {
-    if (state.playedSeconds > duration - 1.5) {
+    if (playerVideo && state.playedSeconds > duration - 1.5) {
       setLoopCount(loopCount + 1)
+      setPlayerVideo(false)
     }
   }
 
