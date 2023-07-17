@@ -1,3 +1,6 @@
+# ReactPlayerでループ時にイベントを発火させる方法
+https://qiita.com/P_cablin321/items/de3062d0b5b91c498ff8
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
